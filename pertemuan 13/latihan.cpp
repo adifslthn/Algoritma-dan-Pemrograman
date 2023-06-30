@@ -33,7 +33,7 @@ double hitungVolumeBola(const Bentuk& bola) {
     return (4.0 / 3.0) * PI * bola.jariJari * bola.jariJari * bola.jariJari;
 }
 //latihan 2
-truct mobil {
+struct mobil {
 string merk = "HYUNDAI";
 string type = "IONIC 5";
 int tahun = 2022;
@@ -41,7 +41,7 @@ string harga ="600,000,000";
 
 };
 //latihan 3
-const double PI = 3.14;
+
 
 typedef struct {
     int luaspersegipanjang(int panjang, int lebar) {
@@ -104,22 +104,24 @@ int main() {
 
     Bentuk bola;
     bola.jariJari = 2;
-    
+
     cout<<"latihan 1 "<<endl;
     cout << "Luas Persegi Panjang: " << hitungLuasPersegiPanjang(persegiPanjang) << endl;
     cout << "Luas Lingkaran: " << hitungLuasLingkaran(lingkaran) << endl;
     cout << "Volume Kerucut: " << hitungVolumeKerucut(kerucut) << endl;
     cout << "Volume Bola: " << hitungVolumeBola(bola) << endl;
-    
+
     cout << "Latihan 2" << endl;
     mobil mobilX;
     cout <<"Merk sepeda  :"<<mobilX.merk << endl;
     cout <<"Tipe sepeda  :"<<mobilX.type << endl;
     cout <<"Tahun sepeda :"<<mobilX.tahun << endl;
     cout <<"Harga sepeda :"<< mobilX.harga<< endl;
-    
-    
+
+
+    const double PI = 3.14;
     cout<<"latihan 3"<<endl;
+
     hitung rumus;
     int p, r, t, l;
     cout << "Latihan 3" << endl;
@@ -173,7 +175,7 @@ int main() {
     }
 
     delete[] dataDin;
-    
+
     //latihan 5
     cout<<"latihan 5"<<endl;
     Sepeda sepeda;
@@ -185,11 +187,11 @@ int main() {
     ptrSepeda->harga = "2.000.000";
 
     ptrSepeda->printInfo();
-    
-    
+
+
     //latihan 6
     cout<<"latihan 6 "<<endl;
-    int main() {
+
      Cuaca cuacaHariIni = CERAH;
     if (cuacaHariIni == CERAH) {
         cout << "Cuaca cerah" << endl;
@@ -200,6 +202,6 @@ int main() {
     } else if (cuacaHariIni == BADAI) {
         cout << "Badai" << endl;
     }
-    
+
     return 0;
 }
